@@ -1,0 +1,21 @@
+.item {
+  list-style: none;
+  aspect-ratio: 5 / 4;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    .image {
+      transform: scale(1.1);
+      transform-origin: 50% 50%;
+    }
+  }
+}
+
+.image {
+  transition: transform 0.3s ease-out;
+  height: 100%;
+  width: 100%;
+}
