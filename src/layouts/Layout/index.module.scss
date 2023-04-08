@@ -1,6 +1,32 @@
+.body {
+  background: linear-gradient(45deg, #060223, #0d054d, #060223);
+  background-size: 10000% 10000%;
+  animation: gradient 8s ease-in-out infinite;
+
+  &::-webkit-scrollbar {
+    width: 15px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: 1px solid #6f63e1;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #6f63e1;
+  }
+}
+
 .main {
-  width: 100%;
   min-height: calc(100vh - 4rem - 2rem);
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    width: 90%;
+  }
 }

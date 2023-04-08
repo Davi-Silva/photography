@@ -7,7 +7,10 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <p className={styles.statement}>
-        Developed by <a href={GITHUB}>Davi Silva</a>
+        Developed by{" "}
+        <a href={GITHUB} target="_blank">
+          Davi Silva
+        </a>
       </p>
     </footer>
   );

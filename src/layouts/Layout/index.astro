@@ -28,13 +28,13 @@ const { title } = Astro.props;
       rel="stylesheet"
     />
   </head>
-  <Body client:load>
+  <body class={styles.body}>
     <NavigationBar />
     <main class={styles.main}>
       <slot />
     </main>
     <Footer />
-  </Body>
+  </body>
 
   <style is:global>
     * {
@@ -48,6 +48,4 @@ const { title } = Astro.props;
       height: 100%;
     }
   </style>
-
-
 </html>

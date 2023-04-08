@@ -3,7 +3,7 @@ import Item from "./Item";
 import usePhotos from "../../hooks/usePhotos";
 
 import styles from "./index.module.scss";
-import ImageViewer from "./View";
+import ImageViewer from "./Viewer";
 
 const List = () => {
   const {
@@ -33,6 +33,7 @@ const List = () => {
             url={item.url}
             index={index}
             handleClickThumbnail={handleClickThumbnail}
+            key={item.url}
           />
         ))}
       </ul>
